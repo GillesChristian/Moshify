@@ -231,3 +231,22 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* Input */
+.input{
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: none;
+    padding: 1.4rem 1.3rem;
+}
+::placeholder{
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input{
+        font-family: 1.5rem;
+    }
+}
