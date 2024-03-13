@@ -524,3 +524,41 @@ a{
         margin: 0 2rem;
     }
 }
+
+/* Collapsible */
+.collapsible {
+    border-bottom: 1px solid var(--color-border);
+}
+.collapsible_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible_heading{
+    margin: 0;
+    font-size: 3rem   ;
+}
+
+.collapsible_chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.4s;
+}
+
+.collapsible_content{
+    max-height: 0;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+/* collapse feature */
+.collapsible-expanded .collapsible_chevron{
+    transform: rotate(0);
+}
+
+.collapsible-expanded .collapsible_content{
+    max-height: 100vh;
+    padding-bottom: 2rem;
+    overflow: visible;
+    opacity: 1;
+}

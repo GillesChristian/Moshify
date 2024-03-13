@@ -12,18 +12,27 @@
 </head>
 <body>
     <div style="padding: 5rem;">
-        <div class="callout callout-primary">
-            <div class="grid grid-cols-2">
-                <div class="callout_content">
-                    <h2 class="callout_heading">Ready to Get Started ?</h2>
-                    <p>
-                        Choosing the hoisting provider that help you start easy, build fast, and grow strong! It's risk-free with our 14-day money back guarantee.
-                    </p>
-
-                </div>
-                <a href="" class="btn btn-secondary btn-stretched">Get Started</a>
+        <div class="collapsible">
+            <header class="collapsible_header">
+                <h2 class="collapsible_heading">Item 1</h2>
+                    <svg class="icon icon-white collapsible_chevron ">
+                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                    </svg>
+            </header>
+            <div class="collapsible_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, mollitia!
             </div>
         </div>
     </div>
+
+    <noscript>Your browser don't support javascript</noscript>
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach((item) =>
+            item.addEventListener("click", function () {
+                this.classList.toggle("collapsible-expanded");
+            })
+        );
+    </script>
 </body>
 </html>
